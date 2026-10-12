@@ -4,11 +4,11 @@ Website simulator gacha bergaya fantasi untuk UTS Pemrograman Web.
 
 ## Identitas
 
-- **Nama**: [NAMA]
+- **Nama**: Leo
 - **NIM**: [NIM]
-- **GitHub Username**: [USERNAME]
-- **Nama Repository**: [NAMA-REPO]
-- **Link GitHub Pages**: `https://[USERNAME].github.io/[NAMA-REPO]/`
+- **GitHub Username**: Pileyo
+- **Nama Repository**: gacha
+- **Link GitHub Pages**: `https://Pileyo.github.io/gacha/`
 
 ## Deskripsi
 
@@ -195,4 +195,4 @@ Memuat data karakter dari `data/data.json`:
 2. Buka Settings repository → Pages
 3. Pilih branch `main`, folder `/ (root)`
 4. Klik Save
-5. Tunggu beberapa menit, website live di `https://[USERNAME].github.io/[NAMA-REPO]/`
+5. Tunggu beberapa menit, website live di `https://Pileyo.github.io/gacha/`
