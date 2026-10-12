@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astral Gacha - Beranda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>✦ Astral Gacha ✦</h1>
+    <p>Simulator gacha fan-made: tarik bintang dan kumpulkan pahlawan legendaris!</p>
+  </header>
+
+  <nav>
+    <a href="index.html" class="aktif" aria-current="page">Beranda</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Banner: Cahaya Bintang Utara</h2>
+      <div class="banner">
+        <p class="banner-judul">✦ KESEMPATAN 5★ TERBATAS ✦</p>
+        <p>Satu banner, tiga tingkat rarity: 3★, 4★, dan 5★.</p>
+      </div>
+      <p class="pity">Counter pity: <span id="pity-count">0</span> / 80</p>
+      <div class="tombol-grup">
+        <button id="tarik-x1" type="button">Tarik x1</button>
+        <button id="tarik-x10" class="btn-kedua" type="button">Tarik x10</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Hasil Pull</h2>
+      <div id="hasil" class="hasil"></div>
+    </section>
+
+    <section>
+      <h2>Riwayat Pull</h2>
+      <button id="reset" class="btn-kedua" type="button">Reset</button>
+      <ul id="riwayat" class="riwayat"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Website fan-made, tidak berafiliasi dengan Kuro Games.</p>
+    <p>UTS Pemrograman Web &copy; 2026 [NAMA] - [NIM]</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

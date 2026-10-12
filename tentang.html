@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astral Gacha - Tentang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>✦ Tentang Simulator ✦</h1>
+    <p>Penjelasan proyek, tingkat keberhasilan (rate), sistem pity, dan kontak.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="tentang.html" class="aktif" aria-current="page">Tentang</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Tentang Proyek</h2>
+      <p>Astral Gacha adalah simulator gacha fan-made bertema fantasi. Pengguna menarik kartu dari satu banner dengan dua pilihan: Tarik x1 atau Tarik x10. Setiap kartu memiliki rarity 3★, 4★, atau 5★ yang ditentukan secara acak.</p>
+      <p>Website ini dibuat untuk UTS mata kuliah Pemrograman Web menggunakan HTML, CSS, dan JavaScript murni, tanpa framework dan tanpa backend.</p>
+    </section>
+
+    <section>
+      <h2>Tabel Rate</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Rarity</th>
+            <th scope="col">Peluang</th>
+            <th scope="col">Keterangan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5★</td>
+            <td>0,8%</td>
+            <td>Dijamin di pull ke-80 lewat pity</td>
+          </tr>
+          <tr>
+            <td>4★</td>
+            <td>12%</td>
+            <td>Peluang tetap setiap pull</td>
+          </tr>
+          <tr>
+            <td>3★</td>
+            <td>87,2%</td>
+            <td>Sisanya dari total 100%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Penjelasan Pity</h2>
+      <p>Counter pity bertambah 1 setiap kali melakukan pull. Jika counter mencapai 80, pull berikutnya dijamin mendapatkan karakter 5★. Setelah mendapat 5★ (baik dari pity maupun keberuntungan), counter kembali ke 0.</p>
+    </section>
+
+    <section>
+      <h2>Disclaimer</h2>
+      <p>Website ini fan-made dan tidak berafiliasi dengan Kuro Games. Tidak ada gambar, logo, atau aset resmi dari game apa pun yang digunakan. Seluruh nama karakter bersifat fiktif dan dapat diganti di file data/data.json.</p>
+    </section>
+
+    <section>
+      <h2>Form Kontak</h2>
+      <form id="kontak-form" novalidate>
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Nama lengkap">
+        <p class="error" id="error-nama"></p>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="nama@email.com">
+        <p class="error" id="error-email"></p>
+
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesanmu di sini..."></textarea>
+        <p class="error" id="error-pesan"></p>
+
+        <button type="submit">Kirim Pesan</button>
+        <p class="sukses" id="pesan-sukses"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Website fan-made, tidak berafiliasi dengan Kuro Games.</p>
+    <p>UTS Pemrograman Web &copy; 2026 [NAMA] - [NIM]</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+/* Palet warna tema fantasi gelap */
+:root {
+  --bg1: #0d0b1e;
+  --bg2: #1a1440;
+  --ungu: #a855f7;
+  --biru: #38bdf8;
+  --emas: #fbbf24;
+  --teks: #f1f0ff;
+  --kartu: #211b4d;
+}
+
+/* Reset dan font dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--teks);
+  background: linear-gradient(160deg, var(--bg1), var(--bg2));
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Header tiap halaman */
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  background: radial-gradient(circle at top, #3b2a7a 0%, transparent 70%);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  background: linear-gradient(90deg, var(--emas), var(--ungu), var(--biru));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Navigasi */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: var(--teks);
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid var(--ungu);
+  border-radius: 999px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  background: var(--ungu);
+  transform: translateY(-2px);
+}
+
+nav a.aktif {
+  background: var(--ungu);
+  font-weight: bold;
+}
+
+/* Konten utama */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+section h2 {
+  color: var(--emas);
+  margin-bottom: 1rem;
+}
+
+/* Area banner */
+.banner {
+  text-align: center;
+  padding: 2rem 1rem;
+  border: 2px solid var(--emas);
+  border-radius: 16px;
+  background: radial-gradient(circle, #4a2f8f 0%, #1a1440 70%);
+}
+
+/* Counter pity */
+.pity {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.pity span {
+  color: var(--emas);
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+/* Tombol pull */
+.tombol-grup {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #1a1440;
+  background: linear-gradient(90deg, var(--emas), #f59e0b);
+  transition: transform 0.15s, box-shadow 0.3s;
+}
+
+/* Efek tekan pada tombol */
+button:hover {
+  box-shadow: 0 0 20px var(--emas);
+}
+
+button:active {
+  transform: scale(0.94);
+}
+
+button.btn-kedua {
+  background: linear-gradient(90deg, var(--ungu), var(--biru));
+  color: white;
+}
+
+button.btn-kedua:hover {
+  box-shadow: 0 0 20px var(--ungu);
+}
+
+/* Animasi teks saat pull */
+.animasi-pull {
+  animation: denyut 1s ease-in-out;
+}
+
+@keyframes denyut {
+  0% { opacity: 0.2; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Grid hasil pull */
+.hasil {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Kartu karakter */
+.kartu {
+  background: var(--kartu);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0;
+  animation: muncul 0.5s ease forwards;
+}
+
+/* Kartu muncul bertahap */
+@keyframes muncul {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hover kartu terangkat halus */
+.kartu:hover {
+  transform: translateY(-6px) scale(1.03);
+  transition: transform 0.3s;
+}
+
+/* Glow sesuai rarity */
+.rarity-3 {
+  border: 2px solid var(--biru);
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+}
+
+.rarity-4 {
+  border: 2px solid var(--ungu);
+  box-shadow: 0 0 18px rgba(168, 85, 247, 0.8);
+}
+
+.rarity-5 {
+  border: 2px solid var(--emas);
+  box-shadow: 0 0 28px rgba(251, 191, 36, 0.9);
+  animation: muncul 0.5s ease forwards, kilau 1.5s ease-in-out infinite alternate;
+}
+
+/* Efek berkilau kartu 5 bintang */
+@keyframes kilau {
+  from { box-shadow: 0 0 18px rgba(251, 191, 36, 0.6); }
+  to { box-shadow: 0 0 36px rgba(251, 191, 36, 1); }
+}
+
+.bintang {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+.rarity-3 .bintang { color: var(--biru); }
+.rarity-4 .bintang { color: var(--ungu); }
+.rarity-5 .bintang { color: var(--emas); }
+
+/* Gaya teks saat menunggu hasil pull */
+.memuat {
+  text-align: center;
+  color: var(--emas);
+  font-size: 1.1rem;
+  padding: 2rem;
+}
+
+/* Riwayat pull */
+.riwayat {
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.riwayat li {
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+}
+
+/* Tabel rate */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid var(--ungu);
+  padding: 0.6rem;
+  text-align: center;
+}
+
+th {
+  background: rgba(168, 85, 247, 0.25);
+}
+
+/* Form kontak */
+form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid var(--ungu);
+  background: #151032;
+  color: var(--teks);
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 1rem;
+}
+
+.error {
+  color: #f87171;
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}
+
+.sukses {
+  color: #4ade80;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.85rem;
+  opacity: 0.85;
+  border-top: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .hasil {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  button {
+    width: 100%;
+  }
+}
