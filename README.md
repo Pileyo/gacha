@@ -1,6 +1,6 @@
-# Astral Gacha - Simulator Gacha Fan-Made
+# Astral Gacha - Simulator Gacha 
 
-Website simulator gacha bergaya fantasi untuk UTS Pemrograman Web.
+Website simulator gacha bergaya fantasi
 
 ## Identitas
 
@@ -8,7 +8,6 @@ Website simulator gacha bergaya fantasi untuk UTS Pemrograman Web.
 - **NIM**: [NIM]
 - **GitHub Username**: Pileyo
 - **Nama Repository**: gacha
-- **Link GitHub Pages**: `https://Pileyo.github.io/gacha/`
 
 ## Deskripsi
 
