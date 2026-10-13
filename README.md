@@ -5,7 +5,6 @@ Website simulator gacha bergaya fantasi
 ## Identitas
 
 - **Nama**: Leo
-- **NIM**: [NIM]
 - **GitHub Username**: Pileyo
 - **Nama Repository**: gacha
 
